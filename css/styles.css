@@ -71,8 +71,13 @@ body {
   overflow: hidden;
 }
 .section {
+  padding: 96px 0;
 }
-
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
 /**
   |============================
   | reset
@@ -307,14 +312,8 @@ img {
 .advantages-section {
   background-color: var(--bcg);
   background-color: #64dcb0;
+}
 
-  padding: 96px 0;
-}
-@media screen and (min-width: 1158px) {
-  .advantages-section {
-    padding: 120px 0;
-  }
-}
 .advantages-section-list {
   /* --items: 4; */
   display: block;
@@ -327,15 +326,18 @@ img {
     gap: 72px 24px;
   }
 }
-@media screen and (min-width: 768px) {
-  .advantages-section-list {
-    --items: 4;
-    gap: 24px;
-  }
-}
+
 @media screen and (max-width: 767.98px) {
   .advantages-section-list-item:not(:last-child) {
     margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .advantages-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    --items: 4;
+    gap: 24px;
   }
 }
 
@@ -350,6 +352,11 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navyblue);
+}
+@media screen and (min-width: 768px) {
+  .advantages-section-list-item-title {
+    text-align: start;
+  }
 }
 @media screen and (min-width: 1158px) {
   .advantages-section-list-item-title {
@@ -368,7 +375,7 @@ img {
   color: var(--body-text);
 }
 @media screen and (min-width: 1158px) {
-  .advantages-section-list-text {
+  .advantages-section-list-item-text {
     font-weight: 400;
   }
 }
@@ -400,11 +407,18 @@ img {
 
 .team-section {
   background-color: var(--footer-light);
-  padding-bottom: 120px;
-  padding-top: 120px;
-  --items: 4;
+  --items: 1;
 }
-
+@media screen and (min-width: 768px) {
+  .team-section {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .team-section {
+    --items: 4;
+  }
+}
 .team-section-title {
   font-size: 36px;
   font-weight: 700;
@@ -419,6 +433,13 @@ img {
 }
 .team-section-list {
   text-align: center;
+  gap: 72px;
+}
+@media screen and (min-width: 768px) {
+  .team-section-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
 }
 .team-section-list-item {
   background-color: var(--bcg);
