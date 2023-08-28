@@ -1067,8 +1067,8 @@ input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
   |============================
 */
 .menu-toggle {
-  min-height: 22px;
-  min-width: 32px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1077,11 +1077,15 @@ input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
   border-radius: 50%;
   outline: none;
+  stroke: var(--navyblue);
 }
-
+.burger-btn {
+  border: none;
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1099,12 +1103,16 @@ input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding-top: 80px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  background-color: var(--bcg);
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -1113,20 +1121,59 @@ input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 24px;
+  right: 24px;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: auto;
 }
-
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
+
   text-decoration: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--navyblue);
+}
+.mobile-menu .link:active {
+  color: var(--ocean);
+}
+.mobile-menu-address-list {
+  margin-bottom: 48px;
+}
+.mobile-menu-list-item-link-tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--body-text);
+  display: block;
+  margin-bottom: 40px;
+}
+.mobile-menu-list-item-link-email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  color: var(--body-text);
+  display: block;
 }

@@ -66,22 +66,12 @@
           </ul>
         </address>
         <button
-          class="menu-toggle js-open-menu"
+          class="menu-toggle burger-btn js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
           </svg>
         </button>
       </div>
@@ -724,18 +714,96 @@
     </div> -->
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="mobile-menu-icon" width="32" height="22">
-          <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+      <button class="menu-toggle js-close-menu modal-btn-close">
+        <svg class="close-menu" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
       </ul>
+      <address class="header-address">
+        <ul class="list mobile-menu-address-list">
+          <li class="header-address-list-item mobile-menu-list-item-link">
+            <a
+              class="link header-address-list-item-link mobile-menu-list-item-link-tel"
+              href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="header-address-list-item">
+            <a
+              class="link header-address-list-item-link mobile-menu-list-item-link-email"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="list footer-section-list card-set">
+          <li class="footer-logo-wrapper">
+            <a
+              class="team-socials-link footer-link link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram icon"
+            >
+              <svg class="logo footer-logo" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-team"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-logo-wrapper">
+            <a
+              class="team-socials-link footer-link link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter icon"
+            >
+              <svg class="logo footer-logo" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-team"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-logo-wrapper">
+            <a
+              class="team-socials-link footer-link link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook icon"
+            >
+              <svg class="logo footer-logo" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-team"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-logo-wrapper">
+            <a
+              class="team-socials-link footer-link link"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="
+                        linkedin icon"
+            >
+              <svg class="logo footer-logo" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-team"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
     </div>
     <!-- <script src="./js/modal.js"></script> -->
     <!-- <script src="./js/form.js"></script> -->

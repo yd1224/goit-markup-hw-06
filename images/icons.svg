@@ -81,9 +81,11 @@
       <path d="M32 3.223 28.777 0 16 12.777 3.223 0 0 3.223 12.777 16 0 28.777 3.223 32 16 19.223 28.777 32 32 28.777 19.223 16 32 3.223z"/>
     </symbol>
 
-  <symbol id="icon-charm_menu-hamburger" viewBox="0 0 47 32">
-     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
-</symbol>
+
+    <symbol id="icon-charm_menu-hamburger" viewBox="0 0 47 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="4.364" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"/>
+    </symbol>
+
 
 
   </defs>
