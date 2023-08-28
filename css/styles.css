@@ -1157,7 +1157,7 @@ input[type='checkbox']:checked + .modal-form-agreement > .agreement-checkbox {
 }
 .mobile-menu-list-item-link-tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 27px;
   line-height: 1.11;
 
   letter-spacing: 0.02em;
