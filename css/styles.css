@@ -162,10 +162,17 @@ img {
   text-transform: uppercase;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
   margin-right: 76px;
+}
+@media only screen and (max-width: 1158px) {
+  .header-logo {
+    margin-right: 120px;
+  }
 }
 .header-nav-list {
   display: flex;
+
   gap: 40px;
 }
 @media screen and (max-width: 767.98px) {
@@ -233,6 +240,12 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 1158px) {
+  .header-address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
 
 .header-address-list-item-link {
   color: var(--body-text);
@@ -243,6 +256,14 @@ img {
   letter-spacing: 0.02em;
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1158px) {
+  .header-address-list-item-link {
+    font-size: 12px;
+    line-height: 1.17;
+
+    letter-spacing: 0.04em;
+  }
 }
 .header-address-list-item-link:hover,
 .header-address-list-item-link:focus {
