@@ -182,13 +182,22 @@
       </section>
       <!-- Team-section -->
       <section class="section team-section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-section-title">Our Team</h2>
           <ul class="list team-section-list card-set">
             <li class="team-section-list-item card-set-item">
               <img
                 class="team-section-list-img"
-                src="./images/team/img.jpg"
+                srcset="
+                  ./images/team/img@1x.jpg 1x,
+                  ./images/team/img@2x.jpg 2x
+                "
+                src="./images/team/img@1x.jpg"
+                srcset="
+                  ./images/team/img@1x-1.jpg 1x,
+                  ./images/team/img@2x-1.jpg 2x
+                "
+                src="./images/team/img@1x-1.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -257,7 +266,11 @@
             <li class="team-section-list-item card-set-item">
               <img
                 class="team-section-list-img"
-                src="./images/team/img-2.jpg"
+                srcset="
+                  ./images/team/img@1x-1.jpg 1x,
+                  ./images/team/img@2x-1.jpg 2x
+                "
+                src="./images/team/img@1x-1.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -327,7 +340,11 @@
             <li class="team-section-list-item card-set-item">
               <img
                 class="team-section-list-img"
-                src="./images/team/img-3.jpg"
+                srcset="
+                  ./images/team/img@1x-2.jpg 1x,
+                  ./images/team/img@2x-2.jpg 2x
+                "
+                src="./images/team/img@1x-2.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -397,7 +414,11 @@
             <li class="team-section-list-item card-set-item">
               <img
                 class="team-section-list-img"
-                src="./images/team/img-4.jpg"
+                srcset="
+                  ./images/team/img@1x-3.jpg 1x,
+                  ./images/team/img@2x-3.jpg 2x
+                "
+                src="./images/team/img@1x-3.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -468,7 +489,7 @@
       </section>
       <!-- Customers-section -->
       <section class="section customer-section">
-        <div class="container">
+        <div class="container customer-container">
           <h2 class="customer-section-title">Customers</h2>
           <ul class="list customer-section-list card-set">
             <li class="customer-section-list-item card-set-item">
