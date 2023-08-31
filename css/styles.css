@@ -1053,6 +1053,11 @@ img {
   padding: 24px;
   padding-top: 72px;
 }
+@media only screen and (max-width: 767.98px) {
+  .modal {
+    width: 100%;
+  }
+}
 .modal-btn {
   background-color: var(--cornflower);
   display: flex;
@@ -1088,7 +1093,7 @@ img {
 }
 .modal-caption {
   display: block;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 16px;
 
   font-family: 'Roboto';
