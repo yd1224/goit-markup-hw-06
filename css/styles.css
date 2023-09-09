@@ -745,6 +745,7 @@ img {
 }
 .card-set-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+
 } */
 .footer {
   background-color: var(--navyblue);
